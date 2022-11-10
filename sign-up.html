@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <style>
+        .line {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            margin: 36px 0;
+            background-color: #d4d4d4;
+        }
+
+        .line::before {
+            content: 'Or';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FFF;
+            color: #8b8b8b;
+            padding: 0 15px;
+        }
+
+        #main {
+            width: 557px;
+            height: 719px;
+           
+            margin: auto;
+        }
+
+        .data {
+            width: 549px;
+            height: 47px;
+            margin: 9px 0px;
+            border-radius: 8px;
+            font-size: 16px;
+            border: 1px solid #CACACA;
+        }
+
+        .data1 {
+            width: 558px;
+            height: 47px;
+            margin: 9px 0px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #CACACA;
+            background-color: white;
+        }
+
+        .continue {
+            width: 558px;
+            height: 47px;
+            margin: 9px 0px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid white;
+            background-color: rgb(107, 175, 243);
+            color: white;
+        }
+
+        #main img {
+            width: 23px;
+            height: 21px;
+            margin-right: 3px;
+        }
+
+        #main #logo {
+            width: 252px;
+            height: 48px;
+            margin: 17px 147px;
+        }
+
+        #btn {
+            border: 1px solid white;
+            margin: 8px 204px;
+            background-color: white;
+            cursor: pointer;
+            color: #595454;
+        }
+        #main p{
+            margin: 42px 1px;
+            text-align: center;
+            color: #8a8888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <img id="logo" src="https://i.ibb.co/3sDsgRF/DESIGN.png" alt="">
+        <h1>Create your free account</h1>
+        <h2>Work email</h2>
+        <input class="data" type="text" placeholder="   name@company.com">
+        <button class="continue">Continue</button>
+        <div class="line"></div>
+        <button class="data1">Continue with Single Sign On</button>
+        <button class="data1"><img
+                src="data:image/png;base64,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"
+                alt="">
+            Continue with Google</button>
+        <button id="btn">Continue with Apple ID</button>
+        <p>By creating an account, you agree to the <a href="">Terms of Services </a>and <a href=""> Privacy Policy.</a></p>
+        <p>Already have an account? <a href="sign-in.html">Sign in</a></p>
+    </div>
+
+</body>
+
+</html>

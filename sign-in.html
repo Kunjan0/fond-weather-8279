@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-in & Sign-up</title>
-    <style>
-        
-    
+    <title>sign-in</title>
 
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -31,31 +30,19 @@
             max-width: 40%;
             width: 100%;
             padding: 30px;
-            border-radius: 6px;
-            background: #FFF;
+            border-radius: 20px;
+            background: white;
         }
 
-        .form.signup {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .forms.show-signup .form.signup {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .forms.show-signup .form.login {
-            opacity: 0;
-            pointer-events: none;
-        }
 
         header {
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 600;
             color: #232836;
-           
+            width: 357px;
+            margin-bottom: 5%;
         }
+
 
         form {
             margin-top: 30px;
@@ -68,6 +55,8 @@
             margin-top: 20px;
             border-radius: 6px;
             margin-bottom: 21px;
+            border: 1px solid #CACACA;
+
         }
 
         .field input,
@@ -125,7 +114,8 @@
         }
 
         .form a {
-            color: #635d5d;;
+            color: #635d5d;
+
             text-decoration: none;
         }
 
@@ -158,14 +148,13 @@
             justify-content: center;
         }
 
-        a.facebook {
-            color: #232836;;
-           
-    border: 1px solid #CACACA;
+        a.signOn {
+            color: #626670;
+            border: 1px solid #CACACA;
 
         }
 
-        a.facebook .facebook-icon {
+        a.signOn .signOn-icon {
             height: 28px;
             width: 28px;
             color: #0171d3;
@@ -177,7 +166,7 @@
             background-color: #fff;
         }
 
-        .facebook-icon,
+        .signOn-icon,
         img.google-img {
             position: absolute;
             top: 50%;
@@ -197,15 +186,41 @@
 
         a.google span {
             font-weight: 500;
-            opacity: 0.6;
-            color: #232836;
+
+            color: #5f5d5d;
         }
+
 
         @media screen and (max-width: 400px) {
             .form {
                 padding: 20px 10px;
             }
 
+        }
+
+        #logo {
+            height: 50px;
+            width: 263px;
+            margin: 1px 151px;
+            margin-bottom: 40px;
+        }
+
+        #img {
+            margin-left: 29%;
+        }
+
+        #head {
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        #apple:hover {
+            text-decoration: underline;
+        }
+
+        #title {
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 
@@ -214,17 +229,22 @@
 <body>
     <section class="container forms">
         <div class="form login">
-            <img src="https://i.ibb.co/3sDsgRF/DESIGN.png" alt="">
+            <img id="logo" src="https://i.ibb.co/3sDsgRF/DESIGN.png" alt="">
             <div class="form-content">
-                <header >Sign in</header>
-                <div class="form-link">
-                    <span>Or <a href="#" class="link signup-link">Don't have an account?</a></span>
+                <div id="title">
+                    <header>Sign in</header>
+
+                    <span>Or <a href="sign-up.html" class="link signup-link">create an account</a></span>
                 </div>
+
+
                 <form action="#">
+                    <h3>Email</h3>
                     <div class="field input-field">
+                        
                         <input type="email" placeholder="name@company.com" class="input">
                     </div>
-
+                     <h3>Password</h3>
                     <div class="field input-field">
                         <input type="password" placeholder="*********" class="password">
                         <i class='bx bx-hide eye-icon'></i>
@@ -239,109 +259,35 @@
                     </div>
                 </form>
 
-               
+
             </div>
 
             <div class="line"></div>
 
             <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon'></i>
+                <a href="#" class="field google">
+                    <i class='bx bxl-google google-icon'></i>
+                    <img id="img"
+                        src="data:image/png;base64,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"
+                        alt="" class="google-img">
                     <span>Sign in with Google</span>
                 </a>
             </div>
 
             <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="#" alt="" class="google-img">
+                <a href="#" class="field signOn">
+                    <img src="#" alt="" class="signOn-img">
                     <span>Sign in with Single Sign On</span>
-                    
+
                 </a>
-                <a href="">Sign in with Apple</a>
+
+                <a id="apple" href="">Sign in with Apple</a>
             </div>
 
         </div>
 
-        <!-- Signup Form -->
-
-        <div class="form signup">
-            <div class="form-content">
-                <header>Signup</header>
-                <form action="#">
-                    <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="password" placeholder="Create password" class="password">
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="password" placeholder="Confirm password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
-
-                    <div class="field button-field">
-                        <button>Signup</button>
-                    </div>
-                </form>
-
-                <div class="form-link">
-                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                </div>
-            </div>
-
-            <div class="line"></div>
-
-            <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
-                </a>
-            </div>
-
-            <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="#" alt="" class="google-img">
-                    <span>Login with Google</span>
-                </a>
-            </div>
-
-        </div>
     </section>
-
-
 
 </body>
 
 </html>
-<script>
-    const forms = document.querySelector(".forms"),
-        pwShowHide = document.querySelectorAll(".eye-icon"),
-        links = document.querySelectorAll(".link");
-
-    pwShowHide.forEach(eyeIcon => {
-        eyeIcon.addEventListener("click", () => {
-            let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-
-            pwFields.forEach(password => {
-                if (password.type === "password") {
-                    password.type = "text";
-                    eyeIcon.classList.replace("bx-hide", "bx-show");
-                    return;
-                }
-                password.type = "password";
-                eyeIcon.classList.replace("bx-show", "bx-hide");
-            })
-
-        })
-    })
-
-    links.forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault(); //preventing form submit
-            forms.classList.toggle("show-signup");
-        })
-    })
-
-</script>
