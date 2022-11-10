@@ -22,10 +22,28 @@
         header {
             width: 100%;
             height: 16vh;
-            background: rgb(61, 43, 89);
+
             background-size: cover;
             background-attachment: fixed;
             padding-bottom: 95px;
+            margin: 0;
+
+            animation: bgcolor infinite 20s;
+        }
+
+        @keyframes bgcolor {
+            0% {
+                background: rgb(61, 43, 89);
+            }
+
+            50% {
+                background: rgb(8, 43, 42);
+            }
+
+            100% {
+                background: rgb(26, 56, 102);
+            }
+
         }
 
         .logo {
@@ -55,8 +73,9 @@
             padding: 0;
             text-align: center;
             margin: 0;
-            transition: 0.8s;
+            transition: 0.6s;
             height: 63px;
+
         }
 
         nav.black ul {
@@ -81,15 +100,15 @@
 
         .menu .l {
             float: right;
-            margin: 11px 110px;
+            margin: 15px 110px;
             font-weight: bold;
-            background: rgb(22, 143, 241);
+            background: rgb(0, 130, 237);
             color: white;
             border: none;
             font-size: 18px;
-            height: 41px;
+            height: 33px;
             width: 169px;
-            border-radius: 19px;
+            border-radius: 10px;
             cursor: pointer;
         }
 
@@ -108,11 +127,122 @@
             margin-left: 3%;
         }
 
-        #top {
+        .top {
             width: 100%;
             padding-top: 1px;
-            height: 78vh;
-            background: rgb(61, 43, 89);
+            height: 588px;
+            margin: 0;
+            display: flex;
+            animation: bgcolor infinite 20s;
+        }
+
+        .l {
+
+            font-weight: bold;
+            background: rgb(0, 130, 237);
+            color: white;
+            border: none;
+            font-size: 18px;
+            height: 33px;
+            width: 169px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #big {
+            width: 33%;
+            height: 509px;
+            border: 1px solid black;
+
+        }
+
+        #big h1 {
+            color: white;
+            font-size: 70px;
+            font-weight: bolder;
+
+        }
+
+        #big .a {
+            margin: 64px 51px;
+        }
+
+
+        .slider-frame {
+           
+            width: 1200px;
+            height: 800px;
+            overflow: hidden;
+        }
+
+        @-webkit-keyframes slide_animation {
+            0% {
+                left: 0px;
+            }
+
+            10% {
+                left: 0px;
+            }
+
+            20% {
+                left: 1200px;
+            }
+
+            30% {
+                left: 1200px;
+            }
+
+            40% {
+                left: 2400px;
+            }
+
+            50% {
+                left: 2400px;
+            }
+
+            60% {
+                left: 1200px;
+            }
+
+            70% {
+                left: 1200px;
+            }
+
+            80% {
+                left: 0px;
+            }
+
+            90% {
+                left: 0px;
+            }
+
+            100% {
+                left: 0px;
+            }
+        }
+
+        .slide-images {
+            width: 3600px;
+            height: 800px;
+            margin: 0 0 0 -2400px;
+            position: relative;
+            -webkit-animation-name: slide_animation;
+            -webkit-animation-duration: 17s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction:alternate ;
+            -webkit-animation-play-state: running;
+        }
+
+        .img-container {
+            height: 800px;
+            width: 1200px;
+            position: relative;
+            float: left;
+        }
+        .img-container > img{
+            height: 509px;
+            border-radius: 22px;
+            width: 87%;
         }
     </style>
 </head>
@@ -131,35 +261,151 @@
                         <li class="aa"><a href="">Pricing</a></li>
                         <li class="aa"><a href="">Enterprise</a></li>
                         <li class="aa"><a href="">Resources</a></li>
-                        <button class="l">Sign up for free</button>
-                        <button class="r">Sign in</button>
+                        <a href="sign-up.html"><button class="l">Sign up for free</button></a>
+                        <a href="sign-in.html"><button class="r">Sign in</button></a>
                     </ul>
-
                 </div>
-
             </nav>
-
         </header>
-        <div id="top">
-            <h1>fdfdsfs</h1>
+
+        <div class="top">
+            <div id="big">
+                <h1 class="a">Build apps that connect everything</h1>
+                <a class="a" href="sign-up.html"><button class="l">Sign up for free</button></a>
+            </div>
+
+            <div class="slider-frame">
+                <div class="slide-images">
+                    <div class="img-container">
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/5a3q6gwVR99gqT0YXHpNoh/3ada51df96199366a8eb96547b1005b9/Hero3b_ContentCreation_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/3CgoN90qF8nJy45PNyHHHO/4515c54cee82eb6a7c8545688dd8c32f/Hero3_ContentCreation_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src=" https://images.ctfassets.net/wl95ljfippl8/12LB18rnzwR1RTL4SObfkm/6e8b59834f69c5f23d67e6ac3467a417/Hero2b_EditorialOperations_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/5YtJ0qHdxs0VtITr9Hmz2C/bc200af0f831183f937d605f788801f7/Hero2_EditorialOperations_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/2rxuCkh9zNhVsjV1ENWIzJ/a0274601f830c02adf315b44ada1b5e7/Hero1b_DesignStudio_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/52ou3qGhBwiIF8qzikfWrc/8cdef9813b42b59391a76c94ca3aabdb/Hero1_DesignStudio_Brand_Campaign.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="content">
-
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quos illum! Unde quisquam cum id ab
+                ipsum, ut, minus amet aspernatur eligendi a, architecto rerum temporibus aperiam. At eaque neque minima
+                explicabo consequuntur sint quidem sit ipsa quos, voluptas hic reiciendis? Aliquid nam quo
+                reprehenderit! Reiciendis hic ipsum fuga consectetur accusamus laudantium sit. Error deleniti dolorem
+                consequatur ipsa in cumque sit accusantium repudiandae autem quibusdam, inventore molestiae. Doloribus
+                commodi ipsa deleniti quas laborum dolore quidem expedita, modi totam libero qui voluptates amet quos
+                saepe voluptatibus explicabo sit eos veniam labore illo itaque. Quo, quos eius asperiores harum veniam
+                numquam cumque! Fuga numquam magnam deserunt voluptate alias inventore! Veniam, necessitatibus! Incidunt
+                a maiores eos placeat architecto eligendi iste libero nulla laudantium voluptatem excepturi ab accusamus
+                nemo saepe nostrum rerum ratione, mollitia id voluptates earum, aspernatur, perspiciatis ex! Enim fugit
+                assumenda sequi magni earum eos nobis sit omnis, voluptas accusantium ex laboriosam, cupiditate illum ab
+                laborum odio at libero rerum voluptatem necessitatibus architecto quidem. Fuga facere nobis, fugit,
+                maiores velit aut eligendi debitis voluptate libero, eveniet distinctio saepe quaerat vitae quod cum
+                deserunt laudantium voluptates modi eos! Quidem ullam alias eligendi vitae. Fugiat minus modi labore
+                sapiente explicabo! Sunt consequuntur cum eaque exercitationem hic modi, impedit nesciunt! Accusantium
+                voluptates ad beatae eos minima obcaecati officia dolorum commodi, rerum nihil excepturi adipisci cumque
+                ea omnis laudantium officiis aut. Minus aut facilis, doloremque fugit esse architecto soluta praesentium
+                omnis eos tempora inventore quasi similique eveniet eaque suscipit alias! Fuga ipsa, doloremque maxime
+                inventore aut asperiores quaerat ea. Labore cupiditate mollitia dolore quia eum amet distinctio
+                blanditiis, eius optio perferendis fugit culpa tenetur veritatis numquam omnis iure ea illo? Rem et
+                adipisci aperiam debitis quasi rerum, quos porro corporis esse sed illum tenetur officia enim sequi
+                omnis consequuntur id qui commodi tempore obcaecati culpa. Eos id velit doloribus beatae ea reiciendis
+                molestiae quas dolores unde temporibus praesentium in earum ullam laboriosam vel maiores, dicta
+                voluptates soluta. Blanditiis voluptates laborum voluptate, dolorem dolor corporis, voluptas perferendis
+                accusamus minima eaque, eum maxime enim quisquam maiores. Impedit non ad ipsum deleniti blanditiis
+                veritatis nostrum, fugit aspernatur laudantium et omnis dolores voluptatibus, accusamus iure, incidunt
+                reprehenderit veniam! Rerum maiores architecto doloribus nisi asperiores hic veritatis. Enim laudantium
+                error quo, alias ipsum, distinctio nostrum obcaecati, modi voluptatum blanditiis sed! Ea maiores
+                perferendis quod facere magnam dignissimos vero iusto soluta commodi earum aliquid saepe distinctio
+                rerum obcaecati cum laborum, ipsa culpa! Impedit, laborum corporis architecto illum adipisci excepturi
+                officiis voluptates magni doloribus possimus iste accusamus provident. Optio voluptas reprehenderit
+                veritatis quidem expedita incidunt odio, eaque deserunt inventore pariatur, atque quae et dolores modi,
+                cumque dolore. Ratione eius molestias et officia consequatur maxime consectetur impedit excepturi illo
+                vero possimus nam qui illum fugit nobis quisquam quod atque iusto corporis, ipsa sapiente aliquam
+                molestiae autem! Nostrum asperiores maxime dolores iure quos non reiciendis sit dignissimos voluptatem,
+                quam illo exercitationem velit labore ipsum voluptatibus vitae quasi tempore? Obcaecati, expedita
+                eveniet provident quas temporibus quibusdam doloribus dolorum minus voluptas similique enim mollitia
+                voluptates recusandae, facere asperiores blanditiis. Repellat praesentium expedita magnam doloremque
+                commodi tempore sit, accusantium animi pariatur dolores nulla voluptatum sint maiores excepturi ad qui
+                ipsum. Exercitationem voluptatum nulla perferendis molestiae saepe corporis, ipsum sit error soluta
+                fugit officia assumenda nemo repellat voluptas illum praesentium dolore inventore fuga ex. Iure ea
+                voluptatibus dignissimos ratione facilis enim incidunt quos asperiores aut possimus accusantium minus,
+                voluptatum libero corporis, consectetur assumenda officia quasi amet officiis eveniet recusandae placeat
+                ex eaque! Consequuntur vitae quo amet nostrum ipsam quod numquam ullam, illo praesentium omnis quis
+                perspiciatis magni dolore saepe consequatur hic repellendus cumque! Corrupti doloribus fugiat inventore
+                ad tempora odio iusto distinctio sunt impedit expedita temporibus enim ipsa, officia quos, omnis dolorum
+                ab amet, nihil suscipit voluptatem aliquam ut laborum iure dolor! Corrupti harum ullam sapiente
+                explicabo! Modi reiciendis, esse obcaecati quae repellat cupiditate voluptas molestiae magni minima
+                dolorum eum! Perspiciatis saepe aliquid voluptas delectus corporis perferendis explicabo, fugiat ad quam
+                quasi officia esse distinctio! Obcaecati deleniti modi est possimus ullam sit quod, debitis error
+                doloribus maiores saepe sapiente tempore provident. Ex reprehenderit nobis modi ratione perspiciatis
+                sequi provident voluptatem magni, autem laudantium pariatur dignissimos neque aperiam assumenda
+                aspernatur hic facere minus nostrum placeat? Illum, corporis? Nesciunt eveniet reprehenderit molestias
+                dolore modi, eum ipsum repellendus nam excepturi, ullam numquam iure amet laborum incidunt maiores
+                consequuntur magnam est fugit. Unde porro saepe quo illo, impedit perspiciatis, illum mollitia commodi
+                fugit excepturi reprehenderit consectetur praesentium quasi libero. Molestias totam animi similique
+                vitae corporis eius beatae reiciendis iusto. Culpa sint repellat deleniti totam asperiores, aspernatur
+                ratione eum, qui explicabo obcaecati dicta molestiae similique, necessitatibus harum rem alias optio
+                dolorem? Nihil voluptatem nobis dolorum? Tenetur possimus consequatur, vitae laudantium quis odit
+                repellat soluta dignissimos mollitia quibusdam debitis accusantium ab itaque nobis! Laudantium aperiam
+                doloremque mollitia repellendus eos voluptate! Omnis impedit assumenda necessitatibus consequuntur esse
+                maxime optio. Eveniet ipsa atque minima doloribus facilis autem, maxime, doloremque, vitae fuga illum
+                assumenda qui facere asperiores reprehenderit perferendis alias maiores officiis! Tenetur error
+                repellendus magni reiciendis, id eos modi quibusdam voluptatum aliquam optio vitae doloremque, repellat
+                sit voluptatibus asperiores consequatur? Placeat ullam eos delectus, odit repellat corrupti, omnis velit
+                odio numquam ducimus, rem quae repellendus nulla. Dolores provident possimus consequuntur sequi unde
+                fugit, sit tenetur harum repellendus vitae animi nihil cum eum consequatur omnis quidem eius. Eos eaque
+                enim dolorum eius quasi provident, error voluptatem repellat! Provident architecto temporibus quibusdam,
+                voluptates blanditiis expedita omnis laudantium recusandae repellendus sapiente dolores ipsa. Sunt ab
+                eius similique illo nihil distinctio natus! Quaerat facilis voluptates cupiditate dolores tempora, aut
+                debitis accusantium maiores. Ab delectus tempore commodi doloremque minima, autem dignissimos dolore
+                inventore officia, dicta dolor iste incidunt provident iusto. Ad, exercitationem minus ducimus neque,
+                adipisci nam reiciendis velit doloribus nisi provident fugit eveniet aliquam eius sit expedita? Aliquam
+                exercitationem sed illo aspernatur numquam eaque ullam magni nostrum, doloribus necessitatibus
+                laboriosam sunt vel omnis esse sit labore in ad architecto obcaecati iure non quis. Magni rem itaque
+                voluptatem non dignissimos et velit, facere blanditiis error ut culpa quidem corporis modi dolore quod?
+            </h1>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script>
-        $(window).scroll(function () {
-            if ($(window).scrollTop()) {
-                $("nav").addClass("black");
-            }
-            else {
-                $("nav").removeClass("black");
-            }
-        });
 
-    </script>
 </body>
 
 </html>
+<!-- "url(https://images.ctfassets.net/wl95ljfippl8/52ou3qGhBwiIF8qzikfWrc/8cdef9813b42b59391a76c94ca3aabdb/Hero1_DesignStudio_Brand_Campaign.jpg)",
+                "url(https://images.ctfassets.net/wl95ljfippl8/2rxuCkh9zNhVsjV1ENWIzJ/a0274601f830c02adf315b44ada1b5e7/Hero1b_DesignStudio_Brand_Campaign.jpg)",
+                "url(https://images.ctfassets.net/wl95ljfippl8/5YtJ0qHdxs0VtITr9Hmz2C/bc200af0f831183f937d605f788801f7/Hero2_EditorialOperations_Brand_Campaign.jpg)",
+                "url(https://images.ctfassets.net/wl95ljfippl8/12LB18rnzwR1RTL4SObfkm/6e8b59834f69c5f23d67e6ac3467a417/Hero2b_EditorialOperations_Brand_Campaign.jpg)",
+                "url(https://images.ctfassets.net/wl95ljfippl8/3CgoN90qF8nJy45PNyHHHO/4515c54cee82eb6a7c8545688dd8c32f/Hero3_ContentCreation_Brand_Campaign.jpg)",
+                "url(https://images.ctfassets.net/wl95ljfippl8/5a3q6gwVR99gqT0YXHpNoh/3ada51df96199366a8eb96547b1005b9/Hero3b_ContentCreation_Brand_Campaign.jpg)", -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop()) {
+            $("nav").addClass("black");
+        }
+        else {
+            $("nav").removeClass("black");
+        }
+    });
+
+
+
+</script>
