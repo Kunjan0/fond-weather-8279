@@ -8,19 +8,15 @@
     <title>Design-Studio</title>
     <style>
         html,
-        body {
+        body,
+        * {
             margin: 0;
             padding: 0;
-            width: 100%;
-            background: white;
-        }
 
-        body {
-            font-family: sans-serif;
         }
 
         header {
-            width: 100%;
+            width: 104%;
             height: 16vh;
 
             background-size: cover;
@@ -80,6 +76,8 @@
 
         nav.black ul {
             background: rgb(0, 0, 0);
+            overflow: hidden;
+
         }
 
         nav ul li {
@@ -92,7 +90,7 @@
             color: white;
             font-size: 16px;
             font-family: sans-serif;
-            text-transform: uppercase;
+
             margin-left: -32px;
             font-weight: bold;
 
@@ -128,7 +126,7 @@
         }
 
         .top {
-            width: 100%;
+            width: 104%;
             padding-top: 1px;
             height: 588px;
             margin: 0;
@@ -152,8 +150,6 @@
         #big {
             width: 33%;
             height: 509px;
-            border: 1px solid black;
-
         }
 
         #big h1 {
@@ -167,88 +163,417 @@
             margin: 64px 51px;
         }
 
+        * {
 
-        .slider-frame {
-           
-            width: 1200px;
-            height: 800px;
-            overflow: hidden;
+            box-sizing: border-box;
         }
 
-        @-webkit-keyframes slide_animation {
+        body {
+            width: 100%;
+            background: white;
+            font-family: sans-serif;
+        }
+
+        .container {
+
+            position: absolute;
+            width: 1049px;
+            transform: translate(-28%, 2%);
+            left: 50%;
+            overflow: hidden;
+            border-radius: 8px;
+            
+
+        }
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+
+        @keyframes slide {
             0% {
-                left: 0px;
+                transform: translateX(0);
             }
 
-            10% {
-                left: 0px;
-            }
-
-            20% {
-                left: 1200px;
+            25% {
+                transform: translateX(0);
             }
 
             30% {
-                left: 1200px;
-            }
-
-            40% {
-                left: 2400px;
+                transform: translateX(-100%);
             }
 
             50% {
-                left: 2400px;
+                transform: translateX(-100%);
             }
 
-            60% {
-                left: 1200px;
+            55% {
+                transform: translateX(-200%);
             }
 
-            70% {
-                left: 1200px;
+            75% {
+                transform: translateX(-200%);
             }
 
             80% {
-                left: 0px;
-            }
-
-            90% {
-                left: 0px;
+                transform: translateX(-300%);
             }
 
             100% {
-                left: 0px;
+                transform: translateX(-300%);
             }
         }
 
-        .slide-images {
-            width: 3600px;
-            height: 800px;
-            margin: 0 0 0 -2400px;
-            position: relative;
-            -webkit-animation-name: slide_animation;
-            -webkit-animation-duration: 17s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction:alternate ;
-            -webkit-animation-play-state: running;
+        img {
+            width: 100%;
+
         }
 
-        .img-container {
-            height: 800px;
-            width: 1200px;
-            position: relative;
-            float: left;
+        .content {
+            width: 100%;
+            height: 250px;
+
         }
-        .img-container > img{
-            height: 509px;
-            border-radius: 22px;
-            width: 87%;
+
+        .content img {
+            width: 258px;
+            height: 51px;
+
+            margin-top: 5%;
+        }
+
+        .mid1 {
+            display: flex;
+            width: 95%;
+            height: 450px;
+            margin: auto;
+
+        }
+
+        .mid1 h1 {
+            margin: 148px 52px;
+        }
+ 
+        .mid1 img {
+            width: 48%;
+            border-radius: 10px;
+        }
+
+        .mid2 {
+            width: 93%;
+            height: 210px;
+            margin: auto;
+            padding: 1%;
+            text-align: center;
+            margin-top: 5%;
+            margin-left: 68px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .mid2>h1 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+
+        .mid2 .mid-mini {
+            width: 100%;
+            height: 125px;
+            display: flex;
+        }
+
+        .mid2 .mid-mini div {
+            width: 489px;
+            height: 124px;
+
+        }
+
+        .mid3 {
+            display: flex;
+            width: 93%;
+            height: 226px;
+
+            margin: auto;
+        }
+
+        .mid3>div {
+            width: 50%;
+            height: 125px;
+
+            padding: 7%;
+        }
+
+        .mid3>div button {
+            margin-top: 7%;
+            width: 222px;
+            height: 47px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: white;
+            border: 1px solid #645f5f;
+            cursor: pointer;
+        }
+
+        .mid4 {
+            display: flex;
+            width: 94%;
+            height: 678px;
+            margin: auto;
+            margin-right: 95px;
+        }
+
+
+        .mid4 div {
+            width: 50%;
+            height: 677px;
+
+        }
+
+        #video {
+            width: 120%;
+            height: 667px;
+
+        }
+
+        .mid4 button:nth-child(1) {
+            color: rgb(122, 48, 48);
+
+        }
+
+        .mid4>div button:nth-child(5) {
+            color: #b99e33;
+        }
+
+        .mid4>div button:nth-child(3) {
+            color: #178368;
+        }
+
+        .mid4 button {
+            margin: -3px 85px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20%;
+            border: 1px solid white;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .mid5 {
+            display: flex;
+            width: 93%;
+            height: 275px;
+
+            margin: auto;
+        }
+
+        .mid5>div {
+            width: 50%;
+            height: 125px;
+
+            padding: 7%;
+        }
+
+        .mid5>div button {
+            margin-top: 7%;
+            width: 222px;
+            height: 47px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: white;
+            border: 1px solid #645f5f;
+            cursor: pointer;
+        }
+
+        #video1 {
+            width: 101%;
+            height: 620px;
+
+        }
+
+        .mid6 {
+            width: 93%;
+            height: 400px;
+            display: flex;
+            margin: auto;
+
+        }
+
+        .mid6 #main1 #min {
+            display: flex;
+            width: 289px;
+            height: 134px;
+
+            margin: 1px;
+        }
+
+        .mid6 #main1 #min div {
+
+            width: 194px;
+            height: 100px;
+
+            margin-top: 8px;
+            color: #6e6c6c;
+
+        }
+
+        .mid6 #main1 #min div img {
+            width: 77px;
+            height: 67px;
+        }
+
+        #min div {
+            width: 70px;
+            height: 40px;
+
+        }
+
+        .mid6 #main1 {
+            width: 78%;
+            height: 350px;
+            display: flex;
+            margin: auto;
+
+        }
+
+        .mid6 #main1 #img1 {
+            width: 499px;
+            height: 274px;
+            border-radius: 20px;
+        }
+
+        .mid6 #main1 div:nth-child(1) {
+            padding: 10px 1px;
+            width: 100%;
+            height: 281px;
+
+
+        }
+
+        .mid6 #main1 h2 {
+            padding-top: 9%;
+            color: #6e6c6c;
+        }
+
+        .end1 {
+            width: 101%;
+            height: 700px;
+            border: 1px solid black;
+            margin: auto;
+            background-color: rgb(229, 239, 242);
+        }
+
+        .end {
+            display: flex;
+            width: 93%;
+            height: 229px;
+            margin: auto;
+        }
+
+        .end>div {
+            width: 50%;
+            height: 125px;
+
+            padding: 7%;
+        }
+
+        .end>div button {
+            margin-top: 7%;
+            width: 222px;
+            height: 47px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: white;
+            border: 1px solid #645f5f;
+            cursor: pointer;
+        }
+
+        .body {
+
+            display: grid;
+            place-items: center;
+            margin: auto;
+        }
+
+        .container2 {
+            height: 459px;
+            position: relative;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            margin: auto;
+
+        }
+
+        .slide-container2 {
+            display: flex;
+            width: calc(250px * 18);
+            animation: scroll 40s linear infinite;
+        }
+        .slide-container2:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+
+        .slide-image2 {
+            height: 370px;
+            width: 250px;
+
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+            transition: 0.5s;
+            margin: 14px;
+            border-radius: 10px;
+            cursor: grab;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: white;
+        }
+
+        .slide-image2 img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .slide-image2:hover {
+            transform: scale(1.1);
+        }
+
+        .slide-image2 h4 {
+            padding-bottom: 5%;
+        }
+
+        .slide-image2 img {
+            padding-bottom: 5%;
+        }
+
+        .slide-image2 h3 {
+            padding-bottom: 5%;
+        }
+
+        .slide-image2 p {
+            padding-bottom: 5%;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper1">
         <header>
             <nav>
                 <div class="logo"><img src="https://i.ibb.co/3sDsgRF/DESIGN.png" alt="">
@@ -256,11 +581,11 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li class="aa"><a href="">Product</a></li>
-                        <li class="aa"><a href="">Solutions</a></li>
+                        <li class="aa"><a href="">Product ></a></li>
+                        <li class="aa"><a href="">Solutions ></a></li>
                         <li class="aa"><a href="">Pricing</a></li>
-                        <li class="aa"><a href="">Enterprise</a></li>
-                        <li class="aa"><a href="">Resources</a></li>
+                        <li class="aa"><a href="">Enterprise ></a></li>
+                        <li class="aa"><a href="">Resources ></a></li>
                         <a href="sign-up.html"><button class="l">Sign up for free</button></a>
                         <a href="sign-in.html"><button class="r">Sign in</button></a>
                     </ul>
@@ -274,126 +599,277 @@
                 <a class="a" href="sign-up.html"><button class="l">Sign up for free</button></a>
             </div>
 
-            <div class="slider-frame">
-                <div class="slide-images">
-                    <div class="img-container">
-                        <img src="https://images.ctfassets.net/wl95ljfippl8/5a3q6gwVR99gqT0YXHpNoh/3ada51df96199366a8eb96547b1005b9/Hero3b_ContentCreation_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
-                    <div class="img-container">
-                        <img src="https://images.ctfassets.net/wl95ljfippl8/3CgoN90qF8nJy45PNyHHHO/4515c54cee82eb6a7c8545688dd8c32f/Hero3_ContentCreation_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
-                    <div class="img-container">
-                        <img src=" https://images.ctfassets.net/wl95ljfippl8/12LB18rnzwR1RTL4SObfkm/6e8b59834f69c5f23d67e6ac3467a417/Hero2b_EditorialOperations_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
-                    <div class="img-container">
-                        <img src="https://images.ctfassets.net/wl95ljfippl8/5YtJ0qHdxs0VtITr9Hmz2C/bc200af0f831183f937d605f788801f7/Hero2_EditorialOperations_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
-                    <div class="img-container">
-                        <img src="https://images.ctfassets.net/wl95ljfippl8/2rxuCkh9zNhVsjV1ENWIzJ/a0274601f830c02adf315b44ada1b5e7/Hero1b_DesignStudio_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
-                    <div class="img-container">
-                        <img src="https://images.ctfassets.net/wl95ljfippl8/52ou3qGhBwiIF8qzikfWrc/8cdef9813b42b59391a76c94ca3aabdb/Hero1_DesignStudio_Brand_Campaign.jpg"
-                            alt="">
-                    </div>
+            <div class="container">
+                <div class="wrapper">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/52ou3qGhBwiIF8qzikfWrc/8cdef9813b42b59391a76c94ca3aabdb/Hero1_DesignStudio_Brand_Campaign.jpg">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/2rxuCkh9zNhVsjV1ENWIzJ/a0274601f830c02adf315b44ada1b5e7/Hero1b_DesignStudio_Brand_Campaign.jpg">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/5YtJ0qHdxs0VtITr9Hmz2C/bc200af0f831183f937d605f788801f7/Hero2_EditorialOperations_Brand_Campaign.jpg">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/12LB18rnzwR1RTL4SObfkm/6e8b59834f69c5f23d67e6ac3467a417/Hero2b_EditorialOperations_Brand_Campaign.jpg">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/3CgoN90qF8nJy45PNyHHHO/4515c54cee82eb6a7c8545688dd8c32f/Hero3_ContentCreation_Brand_Campaign.jpg">
+                    <img
+                        src="https://images.ctfassets.net/wl95ljfippl8/5a3q6gwVR99gqT0YXHpNoh/3ada51df96199366a8eb96547b1005b9/Hero3b_ContentCreation_Brand_Campaign.jpg">
                 </div>
             </div>
         </div>
 
         <div class="content">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quos illum! Unde quisquam cum id ab
-                ipsum, ut, minus amet aspernatur eligendi a, architecto rerum temporibus aperiam. At eaque neque minima
-                explicabo consequuntur sint quidem sit ipsa quos, voluptas hic reiciendis? Aliquid nam quo
-                reprehenderit! Reiciendis hic ipsum fuga consectetur accusamus laudantium sit. Error deleniti dolorem
-                consequatur ipsa in cumque sit accusantium repudiandae autem quibusdam, inventore molestiae. Doloribus
-                commodi ipsa deleniti quas laborum dolore quidem expedita, modi totam libero qui voluptates amet quos
-                saepe voluptatibus explicabo sit eos veniam labore illo itaque. Quo, quos eius asperiores harum veniam
-                numquam cumque! Fuga numquam magnam deserunt voluptate alias inventore! Veniam, necessitatibus! Incidunt
-                a maiores eos placeat architecto eligendi iste libero nulla laudantium voluptatem excepturi ab accusamus
-                nemo saepe nostrum rerum ratione, mollitia id voluptates earum, aspernatur, perspiciatis ex! Enim fugit
-                assumenda sequi magni earum eos nobis sit omnis, voluptas accusantium ex laboriosam, cupiditate illum ab
-                laborum odio at libero rerum voluptatem necessitatibus architecto quidem. Fuga facere nobis, fugit,
-                maiores velit aut eligendi debitis voluptate libero, eveniet distinctio saepe quaerat vitae quod cum
-                deserunt laudantium voluptates modi eos! Quidem ullam alias eligendi vitae. Fugiat minus modi labore
-                sapiente explicabo! Sunt consequuntur cum eaque exercitationem hic modi, impedit nesciunt! Accusantium
-                voluptates ad beatae eos minima obcaecati officia dolorum commodi, rerum nihil excepturi adipisci cumque
-                ea omnis laudantium officiis aut. Minus aut facilis, doloremque fugit esse architecto soluta praesentium
-                omnis eos tempora inventore quasi similique eveniet eaque suscipit alias! Fuga ipsa, doloremque maxime
-                inventore aut asperiores quaerat ea. Labore cupiditate mollitia dolore quia eum amet distinctio
-                blanditiis, eius optio perferendis fugit culpa tenetur veritatis numquam omnis iure ea illo? Rem et
-                adipisci aperiam debitis quasi rerum, quos porro corporis esse sed illum tenetur officia enim sequi
-                omnis consequuntur id qui commodi tempore obcaecati culpa. Eos id velit doloribus beatae ea reiciendis
-                molestiae quas dolores unde temporibus praesentium in earum ullam laboriosam vel maiores, dicta
-                voluptates soluta. Blanditiis voluptates laborum voluptate, dolorem dolor corporis, voluptas perferendis
-                accusamus minima eaque, eum maxime enim quisquam maiores. Impedit non ad ipsum deleniti blanditiis
-                veritatis nostrum, fugit aspernatur laudantium et omnis dolores voluptatibus, accusamus iure, incidunt
-                reprehenderit veniam! Rerum maiores architecto doloribus nisi asperiores hic veritatis. Enim laudantium
-                error quo, alias ipsum, distinctio nostrum obcaecati, modi voluptatum blanditiis sed! Ea maiores
-                perferendis quod facere magnam dignissimos vero iusto soluta commodi earum aliquid saepe distinctio
-                rerum obcaecati cum laborum, ipsa culpa! Impedit, laborum corporis architecto illum adipisci excepturi
-                officiis voluptates magni doloribus possimus iste accusamus provident. Optio voluptas reprehenderit
-                veritatis quidem expedita incidunt odio, eaque deserunt inventore pariatur, atque quae et dolores modi,
-                cumque dolore. Ratione eius molestias et officia consequatur maxime consectetur impedit excepturi illo
-                vero possimus nam qui illum fugit nobis quisquam quod atque iusto corporis, ipsa sapiente aliquam
-                molestiae autem! Nostrum asperiores maxime dolores iure quos non reiciendis sit dignissimos voluptatem,
-                quam illo exercitationem velit labore ipsum voluptatibus vitae quasi tempore? Obcaecati, expedita
-                eveniet provident quas temporibus quibusdam doloribus dolorum minus voluptas similique enim mollitia
-                voluptates recusandae, facere asperiores blanditiis. Repellat praesentium expedita magnam doloremque
-                commodi tempore sit, accusantium animi pariatur dolores nulla voluptatum sint maiores excepturi ad qui
-                ipsum. Exercitationem voluptatum nulla perferendis molestiae saepe corporis, ipsum sit error soluta
-                fugit officia assumenda nemo repellat voluptas illum praesentium dolore inventore fuga ex. Iure ea
-                voluptatibus dignissimos ratione facilis enim incidunt quos asperiores aut possimus accusantium minus,
-                voluptatum libero corporis, consectetur assumenda officia quasi amet officiis eveniet recusandae placeat
-                ex eaque! Consequuntur vitae quo amet nostrum ipsam quod numquam ullam, illo praesentium omnis quis
-                perspiciatis magni dolore saepe consequatur hic repellendus cumque! Corrupti doloribus fugiat inventore
-                ad tempora odio iusto distinctio sunt impedit expedita temporibus enim ipsa, officia quos, omnis dolorum
-                ab amet, nihil suscipit voluptatem aliquam ut laborum iure dolor! Corrupti harum ullam sapiente
-                explicabo! Modi reiciendis, esse obcaecati quae repellat cupiditate voluptas molestiae magni minima
-                dolorum eum! Perspiciatis saepe aliquid voluptas delectus corporis perferendis explicabo, fugiat ad quam
-                quasi officia esse distinctio! Obcaecati deleniti modi est possimus ullam sit quod, debitis error
-                doloribus maiores saepe sapiente tempore provident. Ex reprehenderit nobis modi ratione perspiciatis
-                sequi provident voluptatem magni, autem laudantium pariatur dignissimos neque aperiam assumenda
-                aspernatur hic facere minus nostrum placeat? Illum, corporis? Nesciunt eveniet reprehenderit molestias
-                dolore modi, eum ipsum repellendus nam excepturi, ullam numquam iure amet laborum incidunt maiores
-                consequuntur magnam est fugit. Unde porro saepe quo illo, impedit perspiciatis, illum mollitia commodi
-                fugit excepturi reprehenderit consectetur praesentium quasi libero. Molestias totam animi similique
-                vitae corporis eius beatae reiciendis iusto. Culpa sint repellat deleniti totam asperiores, aspernatur
-                ratione eum, qui explicabo obcaecati dicta molestiae similique, necessitatibus harum rem alias optio
-                dolorem? Nihil voluptatem nobis dolorum? Tenetur possimus consequatur, vitae laudantium quis odit
-                repellat soluta dignissimos mollitia quibusdam debitis accusantium ab itaque nobis! Laudantium aperiam
-                doloremque mollitia repellendus eos voluptate! Omnis impedit assumenda necessitatibus consequuntur esse
-                maxime optio. Eveniet ipsa atque minima doloribus facilis autem, maxime, doloremque, vitae fuga illum
-                assumenda qui facere asperiores reprehenderit perferendis alias maiores officiis! Tenetur error
-                repellendus magni reiciendis, id eos modi quibusdam voluptatum aliquam optio vitae doloremque, repellat
-                sit voluptatibus asperiores consequatur? Placeat ullam eos delectus, odit repellat corrupti, omnis velit
-                odio numquam ducimus, rem quae repellendus nulla. Dolores provident possimus consequuntur sequi unde
-                fugit, sit tenetur harum repellendus vitae animi nihil cum eum consequatur omnis quidem eius. Eos eaque
-                enim dolorum eius quasi provident, error voluptatem repellat! Provident architecto temporibus quibusdam,
-                voluptates blanditiis expedita omnis laudantium recusandae repellendus sapiente dolores ipsa. Sunt ab
-                eius similique illo nihil distinctio natus! Quaerat facilis voluptates cupiditate dolores tempora, aut
-                debitis accusantium maiores. Ab delectus tempore commodi doloremque minima, autem dignissimos dolore
-                inventore officia, dicta dolor iste incidunt provident iusto. Ad, exercitationem minus ducimus neque,
-                adipisci nam reiciendis velit doloribus nisi provident fugit eveniet aliquam eius sit expedita? Aliquam
-                exercitationem sed illo aspernatur numquam eaque ullam magni nostrum, doloribus necessitatibus
-                laboriosam sunt vel omnis esse sit labore in ad architecto obcaecati iure non quis. Magni rem itaque
-                voluptatem non dignissimos et velit, facere blanditiis error ut culpa quidem corporis modi dolore quod?
-            </h1>
+            <img src="https://www.airtable.com/images/home/logobar/Levis.svg" alt="">
+            <img src="https://www.airtable.com/images/home/logobar/netflix.svg" alt="">
+            <img src="https://www.airtable.com/images/home/logobar/shopify.svg" alt="">
+            <img src="https://www.airtable.com/images/home/logobar/spotify.svg" alt="">
+            <img src="https://www.airtable.com/images/home/logobar/intuit.svg" alt="">
+            <img src="https://www.airtable.com/images/home/logobar/time.svg" alt="">
+        </div>
+    </div>
+    <div class="mid1">
+        <h1>Design Studio is your organization's single source of truth. It's how teams, data, and workflows are deeply
+            connected by apps anyone can build.</h1>
+        <img src="https://wallpaperaccess.com/full/1691682.jpg" alt="">
+    </div>
+
+    <div class="mid2">
+        <h1>Transformation at every level</h1>
+        <div class="mid-mini">
+            <div>
+                <h3 style="color: rgb(158, 59, 59); margin-bottom: 15px;">Versatility for you</h3>
+                <p>Create workflows tailored to your work. A modular structure makes them easy to build, extend, and
+                    evolve as needs change.</p>
+            </div>
+            <div>
+                <h3 style="color: rgb(160, 127, 19); margin-bottom: 15px;">Connection for teams</h3>
+                <p>Supercharge collaboration when you connect data and workflows across different teams.</p>
+            </div>
+            <div>
+                <h3 style="color: rgb(7, 120, 138); margin-bottom: 15px;">Agility for organizations</h3>
+                <p>Reduce silos with a central source of truth. When teams can find information faster, they can move
+                    faster too.</p>
+            </div>
         </div>
     </div>
 
+    <div class="mid3">
+        <div>
+            <h1>A platform for the whole organization</h1>
+        </div>
+        <div>
+            <p>See your work in a whole new light when it's connected across every team and every use case.
+            </p>
+            <button>Learn about more product</button>
+        </div>
+    </div>
+
+    <div class="mid4">
+        <div>
+            <button>Bring all your data together</button><br>
+            <button>Define how work flows</button><br>
+            <button>Create visual interfaces</button>
+        </div>
+        <div>
+            <video id="video" loop autoplay muted
+                src="https://videos.ctfassets.net/wl95ljfippl8/2My4osQLOxl8YOjUvpOMVf/b44bb6ea15459192cc2062a44c371a3e/01_Bring_All_Data_Together__1_.mp4"></video>
+        </div>
+    </div>
+
+    <div class="mid5">
+        <div>
+            <h1>Results you can measure</h1>
+        </div>
+        <div>
+            <p>Find out how customers from all kinds of industries achieve amazing outcomes with Airtable.
+            </p>
+            <button>Read customer stories</button>
+        </div>
+    </div>
+
+    <video id="video1" loop autoplay muted
+        src="https://videos.ctfassets.net/wl95ljfippl8/6fNH9YRoe41Fj22lyxGHPT/15afbaf6b2bb4dda6da8b132ed84e002/equinox_V1.mp4#t=0.5"></video>
+
+    <div class="mid6">
+        <div id="main1">
+            <div>
+                <h2>"We were able to produce and deliver so much more than we ever had before."</h2>
+                <div id="min">
+                    <div><img src="https://www.airtable.com/images/home/customerStories/headShots/lindseyPuccio.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Lindsay Puccio</h4>
+                            <p>Product manager, Equinox</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img id="img1"
+                    src="https://images.ctfassets.net/wl95ljfippl8/3B2KEtekXWpw9iXwE0KtBI/d0d48c402c39a6e8597ef5f7dd2e7e51/equinoxMockup.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="end1">
+        <div class="end">
+            <div>
+                <h1>Popular Design Studio templates</h1>
+            </div>
+            <div>
+                <p>Get started fast with pre-built templates. Fitting them to your needs is as simple as drag and drop.
+                </p>
+                <button>See template gallery</button>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="container2">
+                <div class="slide-container2">
+                    <div class="slide-image2 active">
+                        <h4>SALES</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/4cDJDv1nY3XVQHXrOoCQuO/6dc7c8ae4481ad0a4ce5fe3f4ac9dbac/salesCRM.jpg"
+                            alt="">
+                        <h3>Sales CRM</h3>
+                        <p>A template that provides real-time access to your accounts, for teams of all sizes.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>MARKETING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/7uXHGTIYVjJE9BzFuetlS5/af9d78600f1387876ed948ae1260360b/contentCalendar.jpg"
+                            alt="">
+                        <h3>Content Calender</h3>
+                        <p>A content calender that doesn't just track deadlines: it stramlines the entire content
+                            creation
+                            process.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>PRODUCT</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/61qOl333J6nN4RJPUsAKKl/6da8dc1a0d77c6a2bcc203c5a98877c6/productCatalog.jpg"
+                            alt="">
+                        <h3>Product Catalog</h3>
+                        <p>Keep your product catalog and order from tracker in the same place.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>RESEARCH</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/6GBFz35W9LXEvZno5I5kzk/f281d754a08fe1f93c2b4dc915fb499b/userResearch.jpg"
+                            alt="">
+                        <h3>User Research</h3>
+                        <p>Work with any design process or research technique, whether quantitative or qualitative.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>RECRUITING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/5Ti1feTeCNTdqANaC2CpX5/f80ad48889573dd63ce7446fdb7ca960/simpleApplicantTracker.jpg"
+                            alt="">
+                        <h3>Simple Applicant Tracker</h3>
+                        <p>Simple, yet powerful enough to manage the entire hiring process, end-to-end.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>EVENTS</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/17EDULxZHKVw6PFOQgDxud/253856cbc9b926dcb40720964b61e014/virtualEventsTracker.jpg"
+                            alt="">
+                        <h3>Virtual Events Tracker</h3>
+                        <p>Plan virtual events, manage signups, and visualize your event schedule.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>HR</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/6c25pgB6dPkwOqelLy7Nh6/7ed9123a60e80fdde6054f25f2a8ccb6/corpOrgChart.jpg"
+                            alt="">
+                        <h3>Corporate Organizations Chart</h3>
+                        <p>keep your work organized, with this simple, flexible org chart template.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>MARKETING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/2kc8Af0rI4yBTYWVz60ZqW/4dd73a33e086e576a2eecaec27955de4/marketingCampaignTracker.jpg"
+                            alt="">
+                        <h3>Marketing Campaign Tracker</h3>
+                        <p>Track your spend, conversions, and return on investment across multiple channels.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>LIFE</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/2rk7cMWDDl112RmqUh3HNv/73b46043c895afc57fec154f4e46c6bf/apartmentHunting.jpg"
+                            alt="">
+                        <h3>Apartment Hunting</h3>
+                        <p>Where was that place? How much was it? Stay organized while you find the perfect home.</p>
+                    </div>
+                    <div class="slide-image2 active">
+                        <h4>SALES</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/4cDJDv1nY3XVQHXrOoCQuO/6dc7c8ae4481ad0a4ce5fe3f4ac9dbac/salesCRM.jpg"
+                            alt="">
+                        <h3>Sales CRM</h3>
+                        <p>A template that provides real-time access to your accounts, for teams of all sizes.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>MARKETING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/7uXHGTIYVjJE9BzFuetlS5/af9d78600f1387876ed948ae1260360b/contentCalendar.jpg"
+                            alt="">
+                        <h3>Content Calender</h3>
+                        <p>A content calender that doesn't just track deadlines: it stramlines the entire content
+                            creation
+                            process.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>PRODUCT</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/61qOl333J6nN4RJPUsAKKl/6da8dc1a0d77c6a2bcc203c5a98877c6/productCatalog.jpg"
+                            alt="">
+                        <h3>Product Catalog</h3>
+                        <p>Keep your product catalog and order from tracker in the same place.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>RESEARCH</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/6GBFz35W9LXEvZno5I5kzk/f281d754a08fe1f93c2b4dc915fb499b/userResearch.jpg"
+                            alt="">
+                        <h3>User Research</h3>
+                        <p>Work with any design process or research technique, whether quantitative or qualitative.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>RECRUITING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/5Ti1feTeCNTdqANaC2CpX5/f80ad48889573dd63ce7446fdb7ca960/simpleApplicantTracker.jpg"
+                            alt="">
+                        <h3>Simple Applicant Tracker</h3>
+                        <p>Simple, yet powerful enough to manage the entire hiring process, end-to-end.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>EVENTS</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/17EDULxZHKVw6PFOQgDxud/253856cbc9b926dcb40720964b61e014/virtualEventsTracker.jpg"
+                            alt="">
+                        <h3>Virtual Events Tracker</h3>
+                        <p>Plan virtual events, manage signups, and visualize your event schedule.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>HR</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/6c25pgB6dPkwOqelLy7Nh6/7ed9123a60e80fdde6054f25f2a8ccb6/corpOrgChart.jpg"
+                            alt="">
+                        <h3>Corporate Organizations Chart</h3>
+                        <p>keep your work organized, with this simple, flexible org chart template.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>MARKETING</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/2kc8Af0rI4yBTYWVz60ZqW/4dd73a33e086e576a2eecaec27955de4/marketingCampaignTracker.jpg"
+                            alt="">
+                        <h3>Marketing Campaign Tracker</h3>
+                        <p>Track your spend, conversions, and return on investment across multiple channels.</p>
+                    </div>
+                    <div class="slide-image2">
+                        <h4>LIFE</h4>
+                        <img src="https://images.ctfassets.net/wl95ljfippl8/2rk7cMWDDl112RmqUh3HNv/73b46043c895afc57fec154f4e46c6bf/apartmentHunting.jpg"
+                            alt="">
+                        <h3>Apartment Hunting</h3>
+                        <p>Where was that place? How much was it? Stay organized while you find the perfect home.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <h1 style="background-color: rgb(0, 175, 244); width : 110%; height: 15px"></h1>
+   <div>
+    
+   </div>
 </body>
 
 </html>
-<!-- "url(https://images.ctfassets.net/wl95ljfippl8/52ou3qGhBwiIF8qzikfWrc/8cdef9813b42b59391a76c94ca3aabdb/Hero1_DesignStudio_Brand_Campaign.jpg)",
-                "url(https://images.ctfassets.net/wl95ljfippl8/2rxuCkh9zNhVsjV1ENWIzJ/a0274601f830c02adf315b44ada1b5e7/Hero1b_DesignStudio_Brand_Campaign.jpg)",
-                "url(https://images.ctfassets.net/wl95ljfippl8/5YtJ0qHdxs0VtITr9Hmz2C/bc200af0f831183f937d605f788801f7/Hero2_EditorialOperations_Brand_Campaign.jpg)",
-                "url(https://images.ctfassets.net/wl95ljfippl8/12LB18rnzwR1RTL4SObfkm/6e8b59834f69c5f23d67e6ac3467a417/Hero2b_EditorialOperations_Brand_Campaign.jpg)",
-                "url(https://images.ctfassets.net/wl95ljfippl8/3CgoN90qF8nJy45PNyHHHO/4515c54cee82eb6a7c8545688dd8c32f/Hero3_ContentCreation_Brand_Campaign.jpg)",
-                "url(https://images.ctfassets.net/wl95ljfippl8/5a3q6gwVR99gqT0YXHpNoh/3ada51df96199366a8eb96547b1005b9/Hero3b_ContentCreation_Brand_Campaign.jpg)", -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
@@ -405,7 +881,6 @@
             $("nav").removeClass("black");
         }
     });
-
 
 
 </script>
