@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Home</title>
+    <style>
+        html,
+        body,
+        * {
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header {
+            width: 100%;
+            height: 3vh;
+
+            background-size: cover;
+            background-attachment: fixed;
+            padding-bottom: 95px;
+            margin: 0;
+        }
+
+        .logo {
+            position: fixed;
+            float: left;
+            margin: 16px 36px;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .logo img {
+            width: 177px;
+            height: 35px;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+        }
+
+        nav ul {
+            list-style: none;
+
+            overflow: hidden;
+            color: black;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            ;
+            height: 63px;
+
+        }
+
+        nav.black ul {
+            background: rgb(0, 0, 0);
+            overflow: hidden;
+
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family: sans-serif;
+
+            margin-left: -32px;
+            font-weight: bold;
+
+        }
+
+        .menu .l {
+            float: right;
+            margin: 15px 110px;
+            font-weight: bold;
+            background: rgb(0, 130, 237);
+            color: black;
+            border: none;
+            font-size: 18px;
+            height: 33px;
+            width: 169px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .menu .r {
+            float: right;
+            margin: 20px -374px;
+            font-weight: bold;
+            background: none;
+            color: black;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .aa {
+            margin-left: 3%;
+        }
+
+
+        .start {
+            width: 60%;
+            height: 300px;
+
+
+            margin: auto;
+        }
+
+        .start div {
+            display: inline-block;
+        }
+
+        .start div button {
+            width: 127px;
+            height: 96px;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-right: 59px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 22px;
+        }
+
+        .start div p {
+            margin: 13px 20px;
+        }
+
+        #main .aa:nth-child(5) {
+            margin-left: 33%;
+        }
+
+        #main button {
+            margin-left: 19px;
+            width: 42px;
+            height: 42px;
+            border-radius: 27px;
+            color: white;
+            background-color: green;
+            border: none;
+
+        }
+
+        #main .aa {
+            cursor: pointer;
+        }
+
+        .end-part {
+            width: 56%;
+            height: 300px;
+            display: flex;
+            margin: 2px 319px;
+            gap: 39px;
+        }
+
+        .end-part div {
+            width: 24%;
+            height: auto;
+            border-radius: 15px;
+            text-align: center;
+            padding: 30px;
+            /* border: 1px solid #aaa9a9; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .end-part div:hover{
+            background-color: rgb(247, 242, 242);
+        }
+
+        .end-part div button {
+            width: 127px;
+            height: 96px;
+            border: 1px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 23px;
+        }
+
+        .end-part div h3 {
+            margin-top: 14%;
+            margin-bottom: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="main.html"><img src="https://i.ibb.co/3sDsgRF/DESIGN.png" alt=""></a>
+
+            </div>
+            <div class="menu">
+                <ul id="main">
+                    <li class="aa"><a href="">Bases</a></li>
+                    <li class="aa"><a href="">Templates</a></li>
+                    <li class="aa"><a href="">Marketplace</a></li>
+                    <li class="aa"><a href="">Universe</a></li>
+                    <li class="aa"><a href="">Help ?</a></li>
+                    <i style="cursor: pointer" class="fa-regular fa-bell"></i>
+                    <button class="aa">K</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="start">
+        <h1>My First Workspace</h1>
+        <div>
+            <div>
+                <button style="background-color: rgb(159, 183, 211);"><i class="fa-solid fa-rocket"></i></button>
+                <p>Project Files</p>
+            </div>
+            <div>
+                <button style="background-color: rgb(111, 113, 114);">Un</button>
+                <p>Untitled Base</p>
+            </div>
+            <div>
+                <button style="background-color: rgb(191, 138, 212);">Un</button>
+                <p>Untitled Base</p>
+            </div>
+            <div>
+                <button style="background-color: rgb(159, 183, 211);">Un</button>
+                <p>Untitled Base</p>
+            </div>
+            <div>
+                <button style="background-color: rgb(219, 220, 221);"><i class="fa-solid fa-plus"></i></button>
+                <p>Add a Base</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-part">
+        <div>
+            <button style="background-color: rgb(179, 229, 194);"><i class="fa-solid fa-plus"></i></button>
+            <h3>Start from scratch</h3>
+            <p>Create a new blank base with custom tables, fields, and views.</p>
+        </div>
+        <div>
+            <button style="background-color: rgb(198, 237, 255);"><i class="fa-solid fa-arrow-up"></i></button>
+            <h3>Quickly upload</h3>
+            <p>Easily migrate your existing projects in just a few minutes.</p>
+        </div>
+        <div>
+            <button style="background-color: rgb(179, 229, 194);"><i class="fa-solid fa-pen-to-square"></i></button>
+            <h3>Start with templates</h3>
+            <p>Select a template to get started and customize as you go.</p>
+        </div>
+    </div>
+</body>
+
+</html>
