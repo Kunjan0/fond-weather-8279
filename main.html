@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Design-Studio</title>
     <style>
         html,
@@ -16,7 +17,7 @@
         }
 
         header {
-            width: 104%;
+            width: 100%;
             height: 16vh;
 
             background-size: cover;
@@ -76,7 +77,7 @@
 
         nav.black ul {
             background: rgb(0, 0, 0);
-            overflow: hidden;
+            
 
         }
 
@@ -126,7 +127,7 @@
         }
 
         .top {
-            width: 104%;
+            width: 100%;
             padding-top: 1px;
             height: 588px;
             margin: 0;
@@ -163,10 +164,7 @@
             margin: 64px 51px;
         }
 
-        * {
 
-            box-sizing: border-box;
-        }
 
         body {
             width: 100%;
@@ -182,7 +180,7 @@
             left: 50%;
             overflow: hidden;
             border-radius: 8px;
-            
+
 
         }
 
@@ -255,14 +253,14 @@
         .mid1 h1 {
             margin: 148px 52px;
         }
- 
+
         .mid1 img {
             width: 48%;
             border-radius: 10px;
         }
 
         .mid2 {
-            width: 93%;
+            width: 91%;
             height: 210px;
             margin: auto;
             padding: 1%;
@@ -390,7 +388,7 @@
         }
 
         #video1 {
-            width: 101%;
+            width: 100%;
             height: 620px;
 
         }
@@ -460,7 +458,7 @@
         }
 
         .end1 {
-            width: 101%;
+            width: 100%;
             height: 700px;
             border: 1px solid black;
             margin: auto;
@@ -516,7 +514,8 @@
             width: calc(250px * 18);
             animation: scroll 40s linear infinite;
         }
-        .slide-container2:hover{
+
+        .slide-container2:hover {
             animation-play-state: paused;
         }
 
@@ -568,6 +567,70 @@
 
         .slide-image2 p {
             padding-bottom: 5%;
+        }
+
+        .end2 {
+            display: flex;
+            margin: auto;
+            width: 92%;
+            height: 350px;
+
+            margin-top: 40px;
+        }
+
+        .end2 div:nth-child(1) {
+
+            width: 83%;
+            height: 250px;
+        }
+
+        .end2 div:nth-child(2) {
+
+            width: 17%;
+            padding-left: 74px;
+        }
+
+        .end2 p {
+            padding-top: 10px;
+            padding-left: 7px;
+        }
+
+        .end2 #a {
+            margin-top: 153px;
+        }
+
+        .end2 #a>a {
+            margin-right: 2%;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .end2 #i {
+            margin-top: 96%;
+            margin-left: 14px;
+            color: #878181;
+        }
+
+        .ending {
+            width: 92%;
+            height: 264px;
+
+            display: flex;
+            margin: auto;
+        }
+
+        .ending div {
+            width: 291px;
+            height: 264px;
+
+        }
+
+        .ending>div>button {
+            margin-top: 6%;
+            background-color: white;
+            border: 1px solid white;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -863,10 +926,72 @@
 
         </div>
     </div>
-   <h1 style="background-color: rgb(0, 175, 244); width : 110%; height: 15px"></h1>
-   <div>
-    
-   </div>
+    <h1 style="background-color: rgb(0, 175, 244); width : 110%; height: 15px"></h1>
+    <div class="end2">
+        <div>
+            <h1>300,000+ innovative companies are use Design Studio every day.</h1>
+            <h1 style="color: rgb(81, 197, 243);">Join them.</h1>
+            <div id="a">
+                <a href="">Product</a>
+                <a href="">Solutions</a>
+                <a href="">Pricing</a>
+                <a href="">Enterprise</a>
+                <a href="">Contact Sales</a>
+            </div>
+        </div>
+        <div>
+            <button class="l">Sign up for free</button>
+            <p>No credit card needed</p>
+            <i id="i" class="fa-brands fa-facebook"></i>
+            <i id="i" class="fa-brands fa-linkedin"></i>
+            <i id="i" class="fa-brands fa-twitter"></i>
+            <i id="i" class="fa-brands fa-instagram"></i>
+            <i id="i" class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+
+    <div class="ending">
+        <div>
+            <h3>Popular Templates</h3>
+            <button>Content Calendar</button><br>
+            <button>Product Roadmap</button><br>
+            <button>Inventory Tracking</button><br>
+            <button>Marketing Campaign Tracking</button><br>
+            <button>Event Planning</button>
+        </div>
+        <div>
+            <h3>Popular Extensions</h3>
+            <button>Miro</button><br>
+            <button>Jira</button><br>
+            <button>Clearbit</button><br>
+            <button>Loom</button><br>
+            <button>Formstack</button>
+        </div>
+        <div>
+            <h3>Popular Solutions</h3>
+            <button>Marketing</button><br>
+            <button>Product Operations</button><br>
+            <button>Human Resources</button><br>
+            <button>Sales</button><br>
+            <button>Operations</button>
+        </div>
+        <div>
+            <h3>Learn More</h3>
+            <button>Webinars</button><br>
+            <button>Demos</button><br>
+            <button>Guides</button><br>
+            <button>Customer Stories</button><br>
+            <button>Articles</button>
+        </div>
+        <div>
+            <h3>Company</h3>
+            <button>About</button><br>
+            <button>Careers</button><br>
+            <button>Blog</button><br>
+            <button>Status</button><br>
+            <button>Newsroom</button>
+        </div>
+    </div>
 </body>
 
 </html>
