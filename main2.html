@@ -13,7 +13,7 @@
         * {
             margin: 0;
             padding: 0;
-           
+
         }
 
         header {
@@ -115,9 +115,10 @@
         .start {
             width: 60%;
             height: 300px;
+            margin-left: 20px;
 
-
-            margin: auto;
+            /* margin: auto; */
+            margin-bottom: 200px;
         }
 
         .start div {
@@ -162,7 +163,9 @@
             width: 56%;
             height: 300px;
             display: flex;
-            margin: 2px 319px;
+            /* margin: 2px 319px; */
+            margin-left: 20px;
+            margin-bottom: 20px;
             gap: 39px;
         }
 
@@ -175,7 +178,8 @@
             /* border: 1px solid #aaa9a9; */
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
-        .end-part div:hover{
+
+        .end-part div:hover {
             background-color: rgb(247, 242, 242);
         }
 
@@ -192,6 +196,126 @@
             margin-top: 14%;
             margin-bottom: 10%;
         }
+
+        .container {
+            width: 100%;
+            display: flex;
+        }
+
+        .sidebar_section {
+            width: 30%;
+            display: flex;
+            justify-content: right;
+            line-height: .9cm;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .sidebar {
+            width: 60%;
+            padding: 1rem 2rem;
+            font-size: large;
+            height: 420px;
+            background-color: #d0f0fd;
+            border-radius: 15px;
+
+
+        }
+
+        .main_section {
+            width: 60%;
+        }
+
+        .sidebar>ul {
+            margin-left: 30px;
+
+        }
+
+        .sidebar>button {
+            margin-left: 172px;
+            width: 117px;
+            height: 36px;
+            background-color: rgb(174, 52, 174);
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .sidebar_search_section>input {
+            margin-top: 30px;
+            
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 150px;
+            padding-left: 5px;
+            background-color: #CACACA;
+    border-radius: 10px;
+    border: none;
+
+        }
+
+        .sidebar_search_section>button {
+            padding: 7px 7px;
+            margin-left: 10px;
+        }
+
+        .interfaces {
+            margin-top: 30px;
+        }
+
+        .interfaces>button {
+            width: 70%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: start;
+            padding-left: 5px;
+            border: none;
+            background-color: white;
+    cursor: pointer;
+        }
+
+        .two_button {
+            width: 70%;
+            /* background-color: grey; */
+        }
+
+        .two_button>a {
+            cursor: pointer;
+            padding-left: 5px;
+        }
+
+        .workspacee {
+            margin-top: 10px;
+            width: 70%;
+            cursor: pointer;
+        }
+
+        .workspacee>a {
+            padding-left: 5px;
+            border-radius: 5px;
+        }
+
+        .trash {
+            margin-top: 10px;
+            width: 70%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .trash>a {
+            padding-left: 5px;
+        }
+
+        .workspaces>p {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: #6e6969;
+        }
+
+        
+
+        
     </style>
 </head>
 
@@ -214,48 +338,86 @@
             </div>
         </nav>
     </header>
+    <div class="container">
+        <div class="sidebar_section">
+            <div class="sidebar">
+                <h2>Upgrade to Pro before your trial expires</h2>
+                <p> Keep the power you need to manage complex workflows, run reports, and more with tools like: </p>
+                <ul>
+                    <li>Multiple extensions per base.</li>
+                    <li>More sync integrations to quickly bring in outside data</li>
+                    <li>More record limits and attachment space</li>
+                    <li>Team permissions</li>
+                </ul>
+                <button>Upgrade Now</button>
+            </div>
+            <div class="sidebar_search_section">
+                <input type="text" placeholder=" &nbsp; Find a base or interface">
+            </div>
+            <div class="interfaces">
+                <button><i class="fa-solid fa-user"></i> &nbsp; Interfaces</button>
+            </div>
+            <div class="workspaces">
+                <p>Workspaces</p>
+                <div class="two_button">
+                    <a><i class="fa-sharp fa-solid fa-people-group"></i> &nbsp; My First Workspace</a>
+                    
+                </div>
+                <div class="workspacee">
+                    <a><i class="fa-solid fa-plus"></i> &nbsp; Add a workspace</a>
+                </div>
+                <div class="trash">
+                    <a><i class="fa-solid fa-trash"></i> &nbsp; Trash</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="main_section">
+            <div class="start">
+                <h1>My First Workspace</h1>
+                <div>
+                    <div>
+                        <button style="background-color: rgb(159, 183, 211);"><i
+                                class="fa-solid fa-rocket"></i></button>
+                        <p>Project Files</p>
+                    </div>
+                    <div>
+                        <button style="background-color: rgb(111, 113, 114);">Un</button>
+                        <p>Untitled Base</p>
+                    </div>
+                    <div>
+                        <button style="background-color: rgb(191, 138, 212);">Un</button>
+                        <p>Untitled Base</p>
+                    </div>
+                    <div>
+                        <button style="background-color: rgb(159, 183, 211);">Un</button>
+                        <p>Untitled Base</p>
+                    </div>
+                    <div>
+                        <button style="background-color: rgb(219, 220, 221);"><i class="fa-solid fa-plus"></i></button>
+                        <p>Add a Base</p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="start">
-        <h1>My First Workspace</h1>
-        <div>
-            <div>
-                <button style="background-color: rgb(159, 183, 211);"><i class="fa-solid fa-rocket"></i></button>
-                <p>Project Files</p>
+            <div class="end-part">
+                <div>
+                    <button style="background-color: rgb(179, 229, 194);"><i class="fa-solid fa-plus"></i></button>
+                    <h3>Start from scratch</h3>
+                    <p>Create a new blank base with custom tables, fields, and views.</p>
+                </div>
+                <div>
+                    <button style="background-color: rgb(198, 237, 255);"><i class="fa-solid fa-arrow-up"></i></button>
+                    <h3>Quickly upload</h3>
+                    <p>Easily migrate your existing projects in just a few minutes.</p>
+                </div>
+                <div>
+                    <button style="background-color: rgb(179, 229, 194);"><i
+                            class="fa-solid fa-pen-to-square"></i></button>
+                    <h3>Start with templates</h3>
+                    <p>Select a template to get started and customize as you go.</p>
+                </div>
             </div>
-            <div>
-                <button style="background-color: rgb(111, 113, 114);">Un</button>
-                <p>Untitled Base</p>
-            </div>
-            <div>
-                <button style="background-color: rgb(191, 138, 212);">Un</button>
-                <p>Untitled Base</p>
-            </div>
-            <div>
-                <button style="background-color: rgb(159, 183, 211);">Un</button>
-                <p>Untitled Base</p>
-            </div>
-            <div>
-                <button style="background-color: rgb(219, 220, 221);"><i class="fa-solid fa-plus"></i></button>
-                <p>Add a Base</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="end-part">
-        <div>
-            <button style="background-color: rgb(179, 229, 194);"><i class="fa-solid fa-plus"></i></button>
-            <h3>Start from scratch</h3>
-            <p>Create a new blank base with custom tables, fields, and views.</p>
-        </div>
-        <div>
-            <button style="background-color: rgb(198, 237, 255);"><i class="fa-solid fa-arrow-up"></i></button>
-            <h3>Quickly upload</h3>
-            <p>Easily migrate your existing projects in just a few minutes.</p>
-        </div>
-        <div>
-            <button style="background-color: rgb(179, 229, 194);"><i class="fa-solid fa-pen-to-square"></i></button>
-            <h3>Start with templates</h3>
-            <p>Select a template to get started and customize as you go.</p>
         </div>
     </div>
 </body>
